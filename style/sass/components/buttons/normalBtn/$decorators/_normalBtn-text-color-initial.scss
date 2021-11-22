@@ -1,0 +1,19 @@
+.normalBtn-text-color-initial-v-primary {
+
+    color: var(--primary-color-a);
+}
+
+.normalBtn-text-color-initial-v-secondary {
+
+    color: var(--secondary-color-a);
+}
+
+@mixin normalBtn-text-color-initial-v-light {
+
+    color: var(--gray-color-1);
+}
+
+.normalBtn-text-color-initial-v-dark {
+
+    color: var(--gray-color-5);
+}

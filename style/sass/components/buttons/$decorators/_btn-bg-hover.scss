@@ -1,0 +1,32 @@
+@import "../../../mixin";
+
+
+.btn-bg-hover-v-none:hover {
+
+    background: transparent;
+}
+
+@mixin btn-bg-hover-v-primary {
+
+    background-color: var(--primary-color-a);
+}
+
+.btn-bg-hover-v-secondary:hover {
+
+    background-color: var(--secondary-color-a);
+}
+
+.btn-bg-hover-v-light:hover {
+
+    background-color: var(--gray-color-1);
+}
+
+.btn-bg-hover-v-dark:hover {
+
+    background-color: var(--gray-color-5);
+}
+
+.btn-bg-hover-v-glass:hover {
+
+    @include glassmorphism();
+}

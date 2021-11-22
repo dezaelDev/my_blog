@@ -1,0 +1,15 @@
+.iconBtn-icon-animated-v-false:hover {
+
+    .iconBtn__icon {
+
+        transform: scale(1);
+    }
+}
+
+@mixin iconBtn-icon-animated-v-true {
+
+    .iconBtn__icon {
+
+        transform: scale(1.125);
+    }
+}

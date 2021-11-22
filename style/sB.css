@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: #eee;
+}
+#principal{
+    width: 950px;
+    height: 700px;
+    margin: 0 auto;
+}
+/* header */
+header{
+    background: white;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 2px #ccc;
+}
+header h1{
+    font-family:'Franklin Gothic Medium', sans-serif;
+    float: left;
+    color: teal;
+    text-shadow: 0 0 1px darkorange;
+    margin-left: 10px;
+}
+header nav{
+    float: right;
+    margin-right: 5px;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 5px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #333;
+    transition: all 0.5s;
+}
+header nav ul li a:hover{
+    color: teal;
+}
+/* main */
+main{
+    height: 150px;
+    background: url("img/banner.png") 1000% center;
+    margin-bottom: 5px;
+}
+/*section*/
+section{
+    width: 730px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+section article{
+    width: 720px;
+    height: 200px;
+    box-shadow: 0 0 2px #ccc;
+    background: white;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+section article img{
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin-right: 5px;
+}
+/* aside */
+aside{
+    width: 210px;
+    height: 350px;
+    background: white;
+    box-shadow: 0 0 2px #ccc;
+    float: left;
+}
+/* footer */
+footer{
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+    color: #444;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 2px #ccc;
+}
+#mensaje{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background: darkorange;
+    color: white;
+    padding: 5px;
+    margin-top: 300px;
+    margin-left: 200px;
+    text-align: center;
+    line-height: 50px;
+}

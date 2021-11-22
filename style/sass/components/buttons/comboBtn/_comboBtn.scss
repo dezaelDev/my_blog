@@ -1,0 +1,54 @@
+@import "../$decorators/$G";
+@import "$decorators/$G";
+
+
+.comboBtn {
+
+    padding: 0;
+
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+
+    @include btn-status-v-true;
+    @include btn-bg-initial-v-primary;
+    @include btn-border-radius-v-s;
+    @include btn-border-color-initial-v-glass;
+
+    @include comboBtn-size-v-s;
+    @include comboBtn-text-color-initial-v-light;
+
+    transition-property: background-color, color;
+    transition-duration: var(--transition-duration-2);
+    transition-timing-function: ease-out;
+}
+
+.comboBtn:hover {
+
+    @include btn-bg-hover-v-primary;
+    @include btn-border-color-hover-v-none;
+
+    @include comboBtn-text-color-hover-v-dark
+}
+
+.comboBtn__text {
+
+    position: absolute;
+
+    font-weight: 500;
+
+    transition-property: left;
+    transition-duration: var(--transition-duration-2);
+    transition-timing-function: ease;
+}
+
+.comboBtn__icon {
+
+    position: absolute;
+
+    opacity: 0;
+
+    transition-property: right, opacity;
+    transition-duration: var(--transition-duration-2);
+    transition-timing-function: ease;
+}

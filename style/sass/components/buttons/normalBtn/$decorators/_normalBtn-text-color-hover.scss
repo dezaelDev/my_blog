@@ -1,0 +1,24 @@
+.normalBtn-text-color-hover-v-none:hover {
+
+
+}
+
+.normalBtn-text-color-hover-v-primary:hover {
+
+    color: var(--primary-color-a);
+}
+
+.normalBtn-text-color-hover-v-secondary:hover {
+
+    color: var(--secondary-color-a);
+}
+
+.normalBtn-text-color-hover-v-light:hover {
+
+    color: var(--gray-color-1);
+}
+
+@mixin normalBtn-text-color-hover-v-dark {
+
+    color: var(--gray-color-5);
+}

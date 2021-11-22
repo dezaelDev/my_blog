@@ -1,0 +1,31 @@
+.normalInput-lbl-color-initial-v-primary {
+
+    .normalInput__lbl {
+
+        color: var(--primary-color-a);
+    }
+}
+
+.normalInput-lbl-color-initial-v-secondary {
+
+    .normalInput__lbl {
+
+        color: var(--secondary-color-a);
+    }
+}
+
+@mixin normalInput-lbl-color-initial-v-light {
+
+    .normalInput__lbl {
+
+        color: var(--gray-color-1);
+    }
+}
+
+.normalInput-lbl-color-initial-v-dark {
+
+    .normalInput__lbl {
+
+        color: var(--gray-color-5);
+    }
+}

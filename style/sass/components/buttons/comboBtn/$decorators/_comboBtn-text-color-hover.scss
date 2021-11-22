@@ -1,0 +1,24 @@
+.comboBtn-text-color-hover-v-none:hover {
+
+
+}
+
+.comboBtn-text-color-hover-v-primary:hover {
+
+    color: var(--main-color-a);
+}
+
+.comboBtn-text-color-hover-v-secondary:hover {
+
+    color: var(--secondary-color-a);
+}
+
+.comboBtn-text-color-hover-v-light:hover {
+
+    color: var(--grayscale-color-1);
+}
+
+@mixin comboBtn-text-color-hover-v-dark {
+
+    color: var(--grayscale-color-4);
+}

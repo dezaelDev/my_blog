@@ -1,0 +1,32 @@
+@import "../../../mixin";
+
+
+.btn-bg-initial-v-none {
+
+    background: transparent;
+}
+
+@mixin btn-bg-initial-v-primary {
+
+    background-color: var(--primary-color-a);
+}
+
+.btn-bg-initial-v-secondary {
+
+    background-color: var(--secondary-color-a);
+}
+
+.btn-bg-initial-v-light {
+
+    background-color: var(--gray-color-1);
+}
+
+.btn-bg-initial-v-dark {
+
+    background-color: var(--gray-color-5);
+}
+
+.btn-bg-initial-v-glass {
+
+    @include glassmorphism();
+}

@@ -1,0 +1,14 @@
+@import "../mixin";
+
+
+.background {
+
+    z-index: -1;
+
+    position: fixed;
+    object-position: center;
+    min-width: 100%;
+    min-height: 100%;
+
+    filter: brightness(62.5%);
+}

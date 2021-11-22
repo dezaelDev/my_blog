@@ -1,0 +1,32 @@
+@import "../../../mixin";
+
+
+.btn-border-color-initial-v-none {
+
+    border: none;
+}
+
+.btn-border-color-initial-v-primary {
+
+    border: 1px solid var(--primary-color-a)
+}
+
+.btn-border-color-initial-v-secondary {
+
+    border: 1px solid var(--secondary-color-a)
+}
+
+.btn-border-color-initial-v-light {
+
+    border: 1px solid var(--gray-color-1)
+}
+
+.btn-border-color-initial-v-dark {
+
+    border: 1px solid var(--gray-color-5)
+}
+
+@mixin btn-border-color-initial-v-glass {
+
+    @include glassmorphism-edges();
+}

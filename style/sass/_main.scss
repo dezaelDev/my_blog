@@ -1,0 +1,272 @@
+* {
+
+    box-sizing: border-box;
+
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    letter-spacing: .0125rem;
+    word-spacing: .3125rem;
+}
+
+p {
+
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    margin: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+
+    margin: 0;
+    appearance: none;
+}
+
+input[type=number] {
+
+    appearance: textfield;
+}
+
+.webContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web {
+
+    display: grid;
+    grid-template:  "header     header" auto
+                    "content    aside"  auto
+                    "footer     footer" auto /
+                    1fr        auto;
+
+    width: 75%;
+    padding-top: var(--font-size-s);
+    padding-bottom: var(--font-size-s);
+}
+
+.postCard {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--font-size-l);
+    width: 100%;
+    padding: var(--font-size-m);
+
+    border-radius: var(--font-size-xxs);
+
+    @include glassmorphism();
+    @include glassmorphism-edges();
+}
+
+.postCard_header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--font-size-xs) var(--font-size-s);
+
+    border-radius: var(--font-size-xxs);
+    background-color: var(--secondary-color-a);
+
+    @include glassmorphism-edges();
+}
+
+.postCard_header_title {
+
+    font-size: var(--font-size-l);
+    font-weight: 500;
+    color: var(--gray-color-1);
+}
+
+.postCard_header_user {
+
+    display: flex;
+    align-items: center;
+    gap: var(--font-size-s);
+}
+
+.postCard_header_user_name {
+
+    font-size: var(--font-size-m);
+    color: var(--gray-color-1);
+}
+
+.postCard_description {
+
+    font-size: var(--font-size-s);
+    color: var(--gray-color-2);
+}
+
+.postCard_img {
+
+    width: 100%;
+
+    border-radius: var(--font-size-xxs);
+}
+
+.postCard_content {
+
+    font-size: var(--font-size-s);
+    color: var(--gray-color-2);
+}
+
+.postCard_separator {
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--secondary-color-a);
+    border-radius: var(--font-size-xxl);
+}
+
+.postCard_footer {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.postCard_footer_category {
+
+    font-size: var(--font-size-s);
+    color: var(--gray-color-2);
+}
+
+.postCard_footer_date {
+
+    font-size: var(--font-size-s);
+    color: var(--gray-color-2);
+}
+
+.container {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--font-size-m);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--font-size-l);
+    padding: var(--font-size-l);
+
+    border-radius: var(--font-size-xxs);
+
+    @include glassmorphism();
+    @include glassmorphism-edges();
+}
+
+.card__title {
+
+    font-size: var(--font-size-xl);
+    color: var(--gray-color-1);
+}
+
+.card__form {
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--font-size-xl);
+}
+
+.card__form_inputs {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--font-size-xs);
+}
+
+.card__textError {
+
+    font-size: var(--font-size-s);
+    color: var(--secondary-color-a);
+}
+
+/*
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #eee;
+    padding: 5px;
+}
+#caja{
+    width: 600px;
+    height: 500px;
+    background: white;
+    box-shadow: 0 0 2px #ccc;
+    margin: auto;
+    padding: 10px;
+}
+input[type="text"]{
+    width: 575px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+#descripcion{
+    width: 575px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+input[type="file"]{
+    display: none;
+}
+label{
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+select{
+    -ms-appearance: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+#contenido{
+    width: 575px;
+    height: 260px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+input[type="submit"]{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: teal;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+*/
+
+@media only screen and (max-width: 1080px) {
+
+    .web {
+
+        grid-template:  "header"    auto
+                        "content"   auto
+                        "aside"     auto
+                        "footer"    auto /
+                        1fr;
+
+        width: 1080px;
+        padding: var(--font-size-s);
+    }
+}

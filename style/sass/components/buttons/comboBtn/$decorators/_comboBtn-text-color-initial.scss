@@ -1,0 +1,19 @@
+.comboBtn-text-color-initial-v-primary {
+
+    color: var(--main-color-a);
+}
+
+.comboBtn-text-color-initial-v-secondary {
+
+    color: var(--secondary-color-a);
+}
+
+@mixin comboBtn-text-color-initial-v-light {
+
+    color: var(--grayscale-color-1);
+}
+
+.comboBtn-text-color-initial-v-dark {
+
+    color: var(--grayscale-color-4);
+}

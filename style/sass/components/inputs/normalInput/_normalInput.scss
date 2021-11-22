@@ -1,0 +1,60 @@
+@import "../$decorators/$G";
+@import "$decorators/$G";
+
+
+.normalInput {
+
+    position: relative;
+    height: calc(var(--font-size-s) + var(--font-size-xs) * 3);
+
+    @include input-status-v-true;
+
+    @include normalInput-box-color-v-light;
+    @include normalInput-lbl-color-initial-v-light;
+}
+
+.normalInput__box {
+
+    z-index: 10;
+    position: absolute;
+
+    font-size: var(--font-size-s);
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+    padding-bottom: var(--font-size-xs);
+
+    font-weight: 400;
+    background: none;
+    border: none;
+    outline: 0;
+}
+
+.normalInput__lbl {
+
+    position: absolute;
+    top: calc(var(--font-size-xs) * 2);
+
+    font-size: var(--font-size-s);
+    font-weight: 400;
+
+    transition-property: top, font-size, color;
+    transition-duration: var(--transition-duration-2);
+    transition-timing-function: ease-out;
+}
+
+.normalInput__line {
+
+    position: absolute;
+
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    border-radius: 10px;
+
+    transition-property: background, height;
+    transition-duration: var(--transition-duration-2);
+    transition-timing-function: ease-out;
+}

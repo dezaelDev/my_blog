@@ -1,0 +1,29 @@
+.btn-border-radius-v-none {
+
+    border-radius: 0;
+}
+
+.btn-border-radius-v-xs {
+
+    border-radius: var(--font-size-xxs);
+}
+
+@mixin btn-border-radius-v-s {
+
+    border-radius: var(--font-size-xs);
+}
+
+.btn-border-radius-v-m {
+
+    border-radius: var(--font-size-s);
+}
+
+.btn-border-radius-v-l {
+
+    border-radius: var(--font-size-m);
+}
+
+.btn-border-radius-v-full {
+
+    border-radius: 1000px;
+}

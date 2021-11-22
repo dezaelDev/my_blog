@@ -1,0 +1,13 @@
+@import "../mixin";
+
+
+.web_content {
+
+    grid-area: content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--font-size-s);
+}

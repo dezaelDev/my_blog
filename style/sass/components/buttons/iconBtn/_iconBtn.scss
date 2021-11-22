@@ -1,0 +1,45 @@
+@import "../$decorators/$G";
+@import "$decorators/$G";
+
+
+.iconBtn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    @include btn-status-v-true;
+    @include btn-bg-initial-v-primary;
+    @include btn-border-radius-v-s;
+    @include btn-border-color-initial-v-glass;
+
+    @include iconBtn-size-v-m;
+    @include iconBtn-icon-color-initial-v-light;
+
+    transition-property: color, background, border;
+    transition-duration: var(--transition-duration-2);
+    transition-timing-function: ease-out;
+}
+
+.iconBtn__icon {
+
+    transform: scale(1);
+
+    transition-property: transform;
+    transition-duration: var(--transition-duration-2);
+    transition-timing-function: ease;
+}
+
+.iconBtn:hover {
+
+    @include btn-bg-hover-v-primary;
+    @include btn-border-color-hover-v-none;
+
+    @include iconBtn-icon-color-hover-v-dark;
+    @include iconBtn-icon-animated-v-true;
+}

@@ -1,0 +1,26 @@
+@import "../mixin";
+
+
+.web_footer {
+
+    grid-area: footer;
+
+    display: flex;
+    justify-content: center;
+    margin-top: var(--font-size-s);
+    padding: var(--font-size-s);
+
+    border-radius: var(--font-size-xxs);
+
+    @include glassmorphism();
+    @include glassmorphism-edges();
+}
+
+.web_footer_copyright {
+
+    margin: 0;
+
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    color: var(--gray-color-1);
+}

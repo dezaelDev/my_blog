@@ -1,0 +1,31 @@
+.normalInput-box-color-v-primary {
+
+    .normalInput__box {
+
+        color: var(--primary-color-a);
+    }
+}
+
+.normalInput-box-color-v-secondary {
+
+    .normalInput__box {
+
+        color: var(--secondary-color-a);
+    }
+}
+
+@mixin normalInput-box-color-v-light {
+
+    .normalInput__box {
+
+        color: var(--gray-color-1);
+    }
+}
+
+.normalInput-box-color-v-dark {
+
+    .normalInput__box {
+
+        color: var(--gray-color-5);
+    }
+}

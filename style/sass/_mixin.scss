@@ -1,0 +1,22 @@
+@mixin glassmorphism($blur: 50px, $alpha: 0.15, $color: #fff, $gradient: true) {
+
+    @if $gradient {
+
+        background: linear-gradient(135deg, rgba($color, $alpha) 0%, rgba($color, $alpha * 0.5) 100%);
+    }
+    @else {
+
+        background-color: rgba($color, $alpha);
+    }
+
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur($blur);
+}
+
+@mixin glassmorphism-edges($color: #fff, $opacity-a: 0.15, $opacity-b: 0.075, $thickness: 1px) {
+
+    border-top: $thickness solid rgba($color, $opacity-a);
+    border-left: $thickness solid rgba($color, $opacity-a);
+    border-right: $thickness solid rgba($color, $opacity-b);
+    border-bottom: $thickness solid rgba($color, $opacity-b);
+}

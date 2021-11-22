@@ -1,0 +1,15 @@
+@import "../mixin";
+
+
+.web_aside {
+
+    grid-area: aside;
+
+    width: 250px;
+    margin-left: var(--font-size-s);
+
+    border-radius: var(--font-size-xxs);
+
+    @include glassmorphism();
+    @include glassmorphism-edges();
+}

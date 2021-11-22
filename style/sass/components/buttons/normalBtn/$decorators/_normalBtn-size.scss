@@ -1,0 +1,29 @@
+.normalBtn-size-v-xs {
+
+    height: var(--font-size-m);
+    font-size: var(--font-size-xs);
+}
+
+.normalBtn-size-v-s {
+
+    height: var(--font-size-l);
+    font-size: var(--font-size-s);
+}
+
+@mixin normalBtn-size-v-m {
+
+    height: var(--font-size-xl);
+    font-size: var(--font-size-m);
+}
+
+.normalBtn-size-v-l {
+
+    height: var(--font-size-xxl);
+    font-size: var(--font-size-l);
+}
+
+.normalBtn-size-v-xl {
+
+    height: var(--font-size-xxl);
+    font-size: var(--font-size-xl);
+}

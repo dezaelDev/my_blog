@@ -1,0 +1,37 @@
+@import "../$decorators/$G";
+@import "$decorators/$G";
+
+
+.normalBtn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    padding: 0;
+
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+
+    @include btn-status-v-true;
+    @include btn-bg-initial-v-primary;
+    @include btn-border-radius-v-s;
+    @include btn-border-color-initial-v-glass;
+
+    @include normalBtn-size-v-m;
+    @include normalBtn-text-color-initial-v-light;
+
+    transition-property: background-color, color;
+    transition-duration: var(--transition-duration-2);
+    transition-timing-function: ease-out;
+}
+
+.normalBtn:hover {
+
+    @include btn-bg-hover-v-primary;
+    @include btn-border-color-hover-v-none;
+
+    @include normalBtn-text-color-hover-v-dark;
+}
